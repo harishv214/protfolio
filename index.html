@@ -1,8 +1,204 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harish Vollala - Data Analyst Portfolio</title>
+  <style>
+    body {
+      font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f0f23;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .about-image {
+      width: 100%;
+      max-width: 380px;
+      margin: 2rem auto 1.5rem auto;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 6px 28px rgba(60,60,100,0.18);
+      background: #1a1a30;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .profile-photo {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 20px;
+      filter: brightness(1.08) contrast(1.12) saturate(1.1);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+      display: block;
+    }
+    .section-title {
+      color: #4646ff;
+      font-weight: bold;
+      margin: 2rem 0 1rem 0;
+      text-align: left;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    .skills-grid.bi-tools-grid {
+      display: flex;
+      gap: 1.2rem;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 2rem;
+    }
+    .bi-tools-grid .skill-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .bi-tools-grid .skill-icon img {
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
+      margin-bottom: 0.2rem;
+      filter: saturate(1.15) brightness(1.08) drop-shadow(0 1px 5px #2222cc11);
+    }
+    .bi-tools-grid .skill-item span {
+      font-size: 0.93rem;
+    }
+    @media (max-width: 768px) {
+      .bi-tools-grid {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
+      .bi-tools-grid .skill-icon img { width: 30px; height: 30px; }
+    }
+    .experience-card ul {
+      text-align: left !important;
+      padding-left: 0 !important;
+      color: #ccc;
+      list-style: disc inside none;
+      margin-top: 0.7rem;
+    }
+    .experience-card li {
+      text-align: left !important;
+      margin-left: 0 !important;
+      margin-bottom: 0.5rem;
+      padding-left: 1.3rem;
+      position: relative;
+    }
+    .connect-links {
+      display: flex !important;
+      flex-direction: row !important;
+      gap: 0.7rem;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .connect-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 60px;
+      max-width: 90px;
+      gap: 0.4rem;
+      padding: 1rem 0.7rem;
+      margin-bottom: 0 !important;
+    }
+    .connect-icon {
+      width: 30px !important;
+      height: 30px !important;
+      min-width: 30px !important;
+      min-height: 30px !important;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    @media (max-width: 500px) {
+      .connect-links { gap: 0.4rem; }
+      .connect-item { min-width: 45px; max-width: 65px;}
+      .connect-icon { width: 22px !important; height: 22px !important; }
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to my portfolio!</h1>
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="about-image">
+      <img src="https://github.com/harishv214/protfolio/blob/01bdc0f815a7e4bf93c1ff1a9afcbbbbb5ddad9d/MYPIC_PASSPORT.JPG" alt="Harish Vollala" class="profile-photo">
+    </div>
+    <div>
+      <h1>Harish Vollala</h1>
+      <p>10+ years of experience in designing and developing scalable data-driven analytics solutions using Looker, Tableau, Power BI, and Python. Specialized in healthcare, e-commerce, banking, and pharmaceutical domains.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <h2 class="section-title">Business Intelligence Tools</h2>
+    <div class="skills-grid bi-tools-grid">
+      <div class="skill-item">
+        <div class="skill-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Google_Looker_Logo.svg" alt="Looker" />
+        </div>
+        <span>Looker</span>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png" alt="Tableau" />
+        </div>
+        <span>Tableau</span>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" />
+        </div>
+        <span>Power BI</span>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">
+          <img src="https://seeklogo.com/images/O/oracle-business-intelligence-enterprise-edition-obiee-logo-B5E4E8E2F9-seeklogo.com.png" alt="OBIEE" />
+        </div>
+        <span>OBIEE</span>
+      </div>
+    </div>
+  </section>
+  
+  <!-- EXPERIENCE SECTION (Example Card) -->
+  <section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="experience-card">
+      <h3>Data Analyst - Toyota Financial Services</h3>
+      <ul>
+        <li>Developed automated ETL pipelines using Python and SQL, reducing manual report generation by 80%.</li>
+        <li>Designed and maintained Looker dashboards for cross-functional teams (Finance, Sales, Operations).</li>
+        <li>Integrated AWS S3 data sources for real-time analytics and improved business decision-making.</li>
+        <li>Collaborated with BI developers to implement row-level security and role-based access control.</li>
+      </ul>
+    </div>
+    <!-- Add more experience cards as needed -->
+  </section>
+  
+  <!-- CONNECT WITH ME SECTION -->
+  <section id="connect">
+    <h2 class="section-title">Connect with Me</h2>
+    <div class="connect-links">
+      <a class="connect-item" href="https://www.linkedin.com/in/harishvollala/" target="_blank" title="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="connect-icon" />
+      </a>
+      <a class="connect-item" href="https://github.com/" target="_blank" title="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="connect-icon" />
+      </a>
+      <a class="connect-item" href="https://public.tableau.com/app/profile/harishvollala" target="_blank" title="Tableau">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg" alt="Tableau" class="connect-icon" />
+      </a>
+      <a class="connect-item" href="https://www.kaggle.com/" target="_blank" title="Kaggle">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kaggle/kaggle-original.svg" alt="Kaggle" class="connect-icon" />
+      </a>
+      <a class="connect-item" href="https://leetcode.com/" target="_blank" title="LeetCode">
+        <img src="https://assets.leetcode.com/static_assets/public/icons/favicon-192x192.png" alt="LeetCode" class="connect-icon" />
+      </a>
+    </div>
+  </section>
 </body>
 </html>
+
+
